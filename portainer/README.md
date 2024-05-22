@@ -25,7 +25,7 @@ docker volume create portainer_data
 ### Crear usuario `portainer`
 
 ```bash
-sudo useradd -d /opt/portainer -s /usr/bash -M portainer 
+sudo useradd -M -s /usr/sbin/bash -d /opt/portainer portainer 
 ```
 
 ### No login
@@ -61,13 +61,3 @@ Al grupo `docker`
 ```bash
 sudo usermod -aG docker portainer
 ```
-
-
-
-
-
-
-
-
-
-
